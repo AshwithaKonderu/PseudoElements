@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 700px;
+}
+
+.menu-card::before {
+    content: "Ashi's Restaurent";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #5fff97;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+ .menu-item::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    color: #64ff5f;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #54a51d;
+    color: white;
+    padding:  10px;
+    border-radius: 5px;
+}
